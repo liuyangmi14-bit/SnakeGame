@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>贪吃蛇游戏</h1>
+            <div class="score-container">
+                <span>分数: </span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <div class="game-area-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div id="gameOverScreen" class="screen">
+                <h2>游戏结束!</h2>
+                <p>你的分数: <span id="finalScore">0</span></p>
+                <button id="restartButton">重新开始</button>
+            </div>
+            
+            <div id="startScreen" class="screen active">
+                <h2>贪吃蛇</h2>
+                <p>使用方向键或WASD控制蛇的移动</p>
+                <button id="startButton">开始游戏</button>
+            </div>
+        </div>
+        
+        <div class="controls-info">
+            <p>控制: 方向键 或 WASD</p>
+            <div class="speed-control">
+                <label for="speedSlider">速度: </label>
+                <input type="range" id="speedSlider" min="1" max="15" value="7" class="slider">
+                <span id="speedValue">7</span>
+            </div>
+            <button id="pauseButton">暂停</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
