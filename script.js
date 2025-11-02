@@ -186,7 +186,8 @@ function resetGame() {
     gameOverScreen.classList.remove('active');
     
     // 开始游戏循环
-    gameLoop();
+    gameLoop();<!-- test deploy -->
+
 }
 
 // 暂停/继续游戏
